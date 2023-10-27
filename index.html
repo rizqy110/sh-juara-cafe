@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPI JUWARA DARI BIJI KOPI BRAZIL DAN CREMER DARI NETERLAND</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin: 0 auto; max-width: 360px; padding: 5px;}
+
+h1,h2,h3,h4,h5,h6{margin: 7px 0 7px 0;padding: 0;font-size: 19px;}
+
+.mySlides {display: none; text-align: center;}
+.mySlides img {vertical-align: middle;height: 480px;border-radius: 15px;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot,.dot1 {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 3}
+}
+
+img{width:100%}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<script>
+        $(document).on('click','.send', function(){
+    /* Form Input */
+    var input_name = $("#name").val(),
+        input_email = $("#email").val(),
+        input_phone = $("#phone").val(),
+        input_collor = $("#collor").val(),
+        input_pembayaran = $("#pembayaran").val(),
+        input_alamat = $("#alamat").val();
+ 
+    /* Whatsapp Setting */
+    var walink      = 'https://web.whatsapp.com/send',
+        phone       = '6285171602756',
+        text        = 'Halo Admin.? Saya Mau Order KOPI JUWARA.',
+        text2       = 'Terimakasih, Tolong Segera Dikirim YA..!',
+        text_yes    = 'Orderan Sudah Terkirim.',
+        text_no     = 'ISI Form Untuk Melakukan Order.!';
+ 
+    /* Smartphone Support */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var walink = 'whatsapp://send';
+    }
+ 
+    if(input_name != "" && input_phone != "" && input_collor != ""){
+        /* Whatsapp URL */
+        var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
+            '*Nama* : ' + input_name + '%0A' +
+            '*Email* : ' + input_email + '%0A' +
+            '*No. Whatsapp* : ' + input_phone + '%0A' +
+            '*Varian Kopi* : ' + input_collor + '%0A' +
+            '*Metode Pembayaran* : ' + input_pembayaran + '%0A' +
+            '*Alamat Lengkap* : ' + input_alamat + '%0A%0A' + text2 + '%0A';
+ 
+        /* Whatsapp Window Open */
+        window.open(checkout_whatsapp,'_blank');
+        document.getElementById("text-info").innerHTML = '<div class="alert alert-success">'+text_yes+'</div>';
+    } else {
+        document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">'+text_no+'</div>';
+    } });
+    </script>
+</head>
+<body>
+<main style="justify-content: center;align-items: center; display: grid; grid-template-columns: auto;">
+
+<h2 style="text-align:center"><b>GANODERMA</b><br/> <u>Kopi Paling Sehat di Dunia.?</u></h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOqH5wvWLCGgxOsoyA7KAvXxxcWMZQZS3ODF79IsOZj3VjeWrf9hC-6TN6-yuHKWEJRlPZiKK73HLV4M4VmPyZs2uR5VzOQw_vvOemyL0Ns6wQCnJzT7iKoo3SKszGrGZmNQCeC7NEny4rfZxBBSfSeN-zdu6vzf_1eJOBQTZ8kBqpFYm3-IfYzDTLHidQ/s1600/WhatsApp%20Image%202023-10-26%20at%2019.30.29.jpeg">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgUrIl1IwX9m_33YHccbHQdKTWGf_mMre2NjIJZEfV5qOZfq_-hiGsTM60gcZVlCOyeVIqmEWNULxjcOShBIUC2fljf6VIlyabM_SKOsWYxCJts80r407ed1p1XigDysLXtTUj86Fn9F2aKmWSYLb941c3HYGKhVnlnuUClx8G3UbCFNsKqUbsplw6_qXq/s1600/386147317_1519974355415858_8775299393952071545_n.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA1jALpuYBMagxNeHziWn8HhgPXWFLG8cRvdYFbolOXcwVOv29mK2NtkxtzBqE5qg6NNxgnE_RxzbUaqHawkAQQh25Km1JFGv6l6LgqMIdDSnDpWJzvLHXSpi9bK8lz7nZMIEKI42K9n4B8duMqQwFkRyBGhhbhIDCGMo6ca0WPen2bJ4Ju9lNRTUsiyw0/s1600/386064451_248237371516322_1222449998562985742_n.jpg">
+</div>
+
+</div>
+
+<div style="text-align:center;margin:9px;">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<p>
+  <b>KOPI JUWARA DARI BIJI KOPI BRAZIL DAN CREMER DARI NETERLAND</b> - KOPI tapi kok enak Tidur, tapi kok asam lambung enak dan nyaman... Ini kopi APA SIH??? 😊❤‍🔥❤‍🔥❤‍🔥👍❤‍🔥😍😍
+</p>
+
+<div style="text-align:center">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_OYrmzXDbpqOBA34PdKV3DZ4zu3RsNDObR4o24D1sVVi0wx-YJm9HdrhHOmcdU52ERWVSF98jsKRaGSt-oMLb0yKu3a7u7qsWU-Wzka1RwC1JPaxunbne8sx-J1ijWxvhmftdCh3mc5bekWw8OMAnomcWDUkJ9VJrWNee0zVcDWWSAJl_mJ53g59LsnLt/s1600/WhatsApp%20Image%202023-10-26%20at%2019.30.28%282%29.jpeg">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWzl3HlRBH6JfI-WxGylpE9xxgQ0AI4DHIqDi8Y6As3Js9IMbUSNB25B7kIfg3i7yURDttIALeCBniPdoILSAC_YpX4hnWeAb8Id6dhR8Ys2kCXb6zMPASQvgpThHgUrQi6akwmDHViwcF5OUsXfr8-xC7I7t1vmihJgFulMx_uLqRm-RtdKXq-bKd6jSH/s1600/386143944_641052384550181_7419870639890357941_n.jpg">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNtFFZl7U3rnEm2PQlzvHlFRYN96qB5PfMYT24vBDhRvmAardOTafqDJKZ431UiGKMy4MUxf3kseP6lH_4jRwFgjS9j-eCdgY_38DVcTqHq3ZH2nVMxOVWhEUZSdiqweHdkB4Bl7exAYKQbbcz6wUtMxQ5gb3kLBIMYgwMJZ3VHYzDOpY2dsFY5wRa-t3K/s1600/386552643_294961879978891_5450709930867509661_n.jpg">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE7_nIAnIkVEkuO4CbaYIGqwRIBAAWHYY5DWdJxqy7p_y8-Sv54q5_-hyN3F5CLcQ0jFwhAwXcuQQXq463ztqH9mmCejSOQXw7e0tI2pLtCq6PSLJd0CYKK2RF5G3NgnyNsrrPx710B63ECjxw3JHjYWT-KvMmPIXCtjVDMFgQ_BcUSVX1rM0Vp1d8Q6Iq/s1600/WhatsApp%20Image%202023-10-26%20at%2019.30.28%281%29.jpeg">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXug05j1dh4R8aeuEVgJkjXuqeQ1Kgp0x8r9hsuAT15ELnj0kJJO57N8FTVcq9mrI9yz0ZQLXhK9qmqIkNpbiBJotBlYG4CFcUvUK_LoJhLNaFn3irIBmmHCg87S-MLChCJb88CJe33kthrWuunFGgTbQoS2_7cfyFHDOEVfXiHN7SenFfYb7gh1nHugsp/s1600/WhatsApp%20Image%202023-10-26%20at%2019.30.28.jpeg">
+</div>
+
+<h2 style="text-align:center">⭐⭐⭐⭐⭐ - 4.9 | 36799k Terjual</h2>
+<h2 style="text-align:center"><b><u>SH JUARA CAFE</u></b></h2>
+<h3 style="text-align:center">Kopi yang Enak dan Sehat</h3>
+
+<p style="text-align:center">
+<img src="https://brdsg.com/img/600/bq7l6jf6bq7r6th5vg_1/hueRN1LtWdh0hn2hu9CH3toCsgo0BbTJOPvKQ7RTeCGw.png">
+<img src="https://gif.berduflare.com/gif/bq7l6jf6bq7r6th5vg_1/huGqdVAKTY1wLJvhu9C7xxYfHJ7L5oQryXsYA5q3j0w.gif#dc=fc0404&w=701&h=129">
+
+<div style="display: grid; grid-template-columns: auto auto; font-size: 23px;">
+    <span style="text-align: center; color: red;"><strike>❌ Rp318.000</strike></span>
+    <span style="text-align: center; color: green;"><b>🛒 Rp159.000</b></span>
+</div>
+</p>
+
+<div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Langsung Order Via WhatsApp
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Nama Anda</label>
+                        <input type="text" name="name" class="form-control" placeholder="Nama" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail Anda</label>
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label>No. WhatsApp</label>
+                        <input type="text" name="phone" class="form-control" placeholder="No. WhatsApp" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Pilih Varian Kopi</label>
+                        <select name="product" class="form-control" id="collor">
+                            <option value="">-- Pilih Kopi --</option>
+                            <option value="Tanpa Gula">Tanpa Gula</option>
+                            <option value="Dengan Gula">Dengan Gula</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Pilih Metode Pembayaran</label>
+                        <select name="product" class="form-control" id="pembayaran">
+                            <option value="">-- Pilih Pembayaran --</option>
+                            <option value="Transfer">Transfer</option>
+                            <option value="COD">COD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Alamat Lengkap Anda</label>
+                        <textarea name="description" class="form-control" rows="3" id="alamat" placeholder="Provinsi, Kota/Kabupaten, Kecamatan, Desa, RT/RW, Nama Jalan/Rumah, KODE POS"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success send">👉 Send Via WhatsApp</button>
+                    </div>
+ 
+                    <div id="text-info"></div>
+                </div>
+            </div>
+    </div>
+
+    <div style="text-align:center;display:grid;justify-content:center">
+        <img src="https://brdsg.com/img/800/bq7l6ke8braw8lcdv9_1/hqUgOxLDqBtnsiahqbEf7DSz8dT5J4SbKvJNB4eDuS3g.webp"/>
+    </div>
+</main>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
